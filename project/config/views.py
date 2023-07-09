@@ -6,3 +6,8 @@ def saludo(request):
 
 def saludo_vista(resquest):
     return HttpResponse("<h1>Segunda vista")
+
+def nombre(resquest, nombre:str , apellido:str):
+    nombre = nombre.capitalize ()
+    apellido= apellido.capitalize ()
+    return HttpResponse(f"{apellido}, {nombre}")
