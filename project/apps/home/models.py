@@ -6,7 +6,7 @@ class Pais(models.Model):
     def __str__(self):
         return self.nombre
 
-class Home(models.Model):
+class Usuario (models.Model):
     nombre = models.CharField(max_length=50)
     apellido = models.CharField(max_length=50)
     nacimiento = models.DateField(null=True)

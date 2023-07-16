@@ -1,9 +1,9 @@
 from django.contrib import admin
-from django.db import models
+from . import models
 
 
 # Register your models here.
-from .models import Home, Pais
+from .models import Usuario, Pais
 
-admin.site.register(Home)
+admin.site.register(Usuario)
 admin.site.register(Pais)
