@@ -1,6 +1,9 @@
 from django.urls import path
 from . import views 
-#urls de home- es la app troncal
+
+#urls de usuario - es la app que se va a conectar a home
+
+app_name="usuario"
 
 
 urlpatterns = [
