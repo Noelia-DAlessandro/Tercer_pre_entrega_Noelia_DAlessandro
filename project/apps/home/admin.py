@@ -3,7 +3,7 @@ from django.db import models
 
 
 # Register your models here.
-from .models import Cliente, Pais
+from .models import Home, Pais
 
-admin.site.register(Cliente)
+admin.site.register(Home)
 admin.site.register(Pais)
