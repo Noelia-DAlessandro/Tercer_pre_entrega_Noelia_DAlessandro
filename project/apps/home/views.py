@@ -5,10 +5,14 @@ from .forms import HomeForm
 def index(request):
     return render(request, "cliente/index.html", {"saludo": "Holaaaa"})
 
-def crear_cliente(request: HttpRequest):
+def crear_cliente(request: HttpRequest) -> HttpResponse:
     
     if request.method  == "POST":
-        ...
+        form = HomeForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect(cliente:home)
+            
     else:
         form = HomeForm()
     
