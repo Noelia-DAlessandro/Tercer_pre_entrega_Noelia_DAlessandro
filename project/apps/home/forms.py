@@ -1,10 +1,10 @@
 from django import forms
 
-from .models import Home
+from .models import Usuario
 
 
 class HomeForm (forms.ModelForm):
     class Meta: 
-        model = Home
-        fields = ['nombre','apellido', 'nacimiento', 'pais_orige_id']
+        model = Usuario
+        fields = ['nombre','apellido', 'nacimiento', 'pais_origen_id']
         
