@@ -13,3 +13,4 @@ class Usuario(models.Model):
     pais_origen_id = models.ForeignKey(Pais, on_delete=models.SET_NULL, null=True)
     def __str__(self):
         return f"{self.nombre} {self.apellido}"
+    
